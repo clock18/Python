@@ -3,27 +3,27 @@
 
 # def add(x,y):
 #     result = x + y
-# #     return result
+#      return result
 #
-# # print(add(10,20))
+# print(add(10,20))
 #
 # add2 = lambda x,y : x + y
 # print(add2(10,2))
 #
-# # add3 = lambda x=10,y=10 : x + y
-# # print(add3(10,20))
-# # print(add3())
+# add3 = lambda x=10,y=10 : x + y
+# print(add3(10,20))
+# print(add3())
 #
 #
-# # 문제. 리스트의 각 요소에 10을 더하는 함수
+# 문제. 리스트의 각 요소에 10을 더하는 함수
 #
-# def add10(numList):
-#     for i in range(len(numList)):
-#         numList[i] += 10
-#
-# num = [10,20,30]
-# add10(num)
-# print(num)
+def add10(numList):
+    for i in range(len(numList)):
+        numList[i] += 10
+
+num = [10,20,30]
+add10(num)
+print(num)
 #
 #
 #

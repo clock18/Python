@@ -14,8 +14,8 @@
 # divmod(a,b) : a를 b로 나눈 몫과 나머지 반환
 # print(divmod(10,3))     # 반환 값은 튜플 형태. (몫, 나머지)형태로 출력
 #
-# # enumerate() : 시퀀스를 인덱스값을 포함해서 enumerate형의 객체로 반환
-# # 시퀀스 : range(), 문자열, 리스트, 튜플
+# enumerate() : 시퀀스를 인덱스값을 포함해서 enumerate형의 객체로 반환
+# 시퀀스 : range(), 문자열, 리스트, 튜플
 # print(enumerate('hello'))
 # for i, c in enumerate('hello'):
 #     print(i, c)
@@ -31,17 +31,17 @@
 
 # filter(function, iterable) : function으로 iterable을 걸러냄
 
-# def positive(x):
-#     return x>0
-#
-# print(filter(positive, [0,1,-1,10,-3,5]))
-# print(list(filter(positive, [0,1,-1,10,-3,5])))
+def positive(x):
+    return x>0
+
+print(filter(positive, [0,1,-1,10,-3,5]))
+print(list(filter(positive, [0,1,-1,10,-3,5])))
 
 
-# def even(x):
-#     if x%2==0:
-#         return x
-# print(list(filter(even,[0,1,-1,10,-3,5])))
+def even(x):
+    if x%2==0:
+        return x
+print(list(filter(even,[0,1,-1,10,-3,5])))
 
 
 # help() : 도움말

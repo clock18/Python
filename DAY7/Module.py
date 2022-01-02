@@ -17,10 +17,10 @@ print(builtModules)
 
 
 # import 모듈명
-import random       # random 안에 있는 모든 함수를 다 참조하겠다는 의미
+# import random       # random 안에 있는 모든 함수를 다 참조하겠다는 의미
 
 # import 모듈명 as 별칭
-import pandas as pd     # 모듈명이 길기 때문에 짧게 별칭으로 바꿔서 사용
+# import pandas as pd     # 모듈명이 길기 때문에 짧게 별칭으로 바꿔서 사용
 
 # 모듈 내 함수를 참조
 # import 모듈
