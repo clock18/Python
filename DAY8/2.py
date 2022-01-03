@@ -1,15 +1,15 @@
 # 한 줄에 두 개의 숫자가 저장되어 있는 파일을 읽어와서 두 숫자를 더한 연산 결과를 저장
 
-f = open('list_num.txt','r')
-readList = f.read()
-readList_split = readList.split()
-readList_len = len(readList_split)
+def sum(inputname, savename):
+    except_str = ''
+    with open(inputname, 'r') as f:
+        a = f.readlines()
+    ls = [i.split('\n')[0] for i in a]
+    ls = [i for i in ls if i != except_str]
+    ls = [i.split(' ') for i in ls]
+    with open(savename, 'w') as f:
+        for l in ls:
+            f.write(f'{l[0]}+{l[1]}={float(l[0]) + float(l[1])}\n')
 
-
-
-
-for i in range(0,readList_len,2):
-    sum1 = int(readList_split[i]) + int(readList_split[i + 1])
-    print('%d + %d = %d' % (int(readList_split[i]), int(readList_split[i + 1]), int(sum1)))
-
-f.close()
+if __name__ == '__main__':
+    sum('list_num.txt', 'list_num_save.txt')

@@ -4,8 +4,8 @@ def asterisk_test1(a, *args):
     print(a, args)
     print(type(args))
 
-def asterisk_test2(a, *args):
-    print(a, *args)
+def asterisk_test2(*args):
+    print(*args)
     print(type(args))
 
 asterisk_test1(1,2,3,4,5)

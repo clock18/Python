@@ -7,15 +7,15 @@
 # f.close()
 
 
-f = open('test.txt','r')
+f = open('list_num.txt','r')
 lines = f.readlines()
 for line in lines:
-    print(lines,end='')
+    print(line.split())
 f.close()
 
 
-f = open('test.txt','r', encoding='utf-8')
-lines = f.readlines()
-for line in f:
-    print(lines,end='')
-f.close()
+# f = open('test.txt','r', encoding='utf-8')
+# lines = f.readlines()
+# for line in f:
+#     print(lines,end='')
+# f.close()
