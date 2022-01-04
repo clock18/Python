@@ -2,4 +2,4 @@
 
 import os
 
-print(os.walk('c:/pythonStudy'))
+print(os.walk('/'))

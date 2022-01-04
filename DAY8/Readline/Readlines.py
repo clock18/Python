@@ -7,7 +7,7 @@
 # f.close()
 
 
-f = open('list_num.txt','r')
+f = open('../list_num.txt', 'r')
 lines = f.readlines()
 for line in lines:
     print(line.split())

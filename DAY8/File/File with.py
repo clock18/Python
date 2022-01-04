@@ -6,7 +6,7 @@
 # with open('test3.txt','w') as f:
 #     f.write('hello')
 
-file = 'test3.txt'
+file = '../test3.txt'
 data = 'Python Programming'
 
 with open(file,'w') as f:

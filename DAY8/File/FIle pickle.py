@@ -10,7 +10,7 @@ import pickle
 
 
 # 객체 로딩 : pickle.load()
-f = open('list.pickle','rb')
+f = open('../list.pickle', 'rb')
 result2 = pickle.load(f)
 print(result2)
 result2.append(100)
