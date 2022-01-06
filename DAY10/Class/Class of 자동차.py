@@ -19,8 +19,8 @@ class Car:
 
 class Truck(Car):
     def __init__(self, speed, color, load):
-        super().__init__(speed, color)
-        self.load = load
+        super().__init__(speed, color)      # super클래스의 speed,color를 Truck함수
+        self.load = load                    # 안에서 다시 초기화 시켜줌.
 
 truck1 = Truck(10, 'red', 1000)
 truck1.drive()
